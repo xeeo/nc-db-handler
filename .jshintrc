@@ -1,0 +1,28 @@
+{
+  "node": true,
+  "mocha": true,
+  "jasmine": true,
+  "browser": true,
+  "esnext": false,
+  "bitwise": false,
+  "curly": false,
+  "eqeqeq": true,
+  "latedef": "nofunc",
+  "noarg": true,
+  "undef": true,
+  "unused": true,
+  "newcap": false,
+  "strict": true,
+  "globals": {
+    "angular": true,
+    "io": false,
+    "ApplicationConfiguration": true
+  },
+  "predef": [
+    "inject",
+    "by",
+    "browser",
+    "element"
+  ],
+  "devel": true
+}

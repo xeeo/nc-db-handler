@@ -1,0 +1,60 @@
+{
+  "name": "nc-db-handler",
+  "version": "3.5.5",
+  "private": false,
+  "description": "Database Handler for Postres and ElasticSearch",
+  "homepage": "https://github.com/xeeo/nc-db-handler#readme",
+  "main": "src/implementation.js",
+  "scripts": {
+    "test": "mocha -w --debug test/**/*.mocha.js"
+  },
+  "bugs": {
+    "url": "https://github.com/xeeo/nc-db-handler/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:xeeo/nc-db-handler.git"
+  },
+  "keywords": [
+    "ncp",
+    "postgres",
+    "elasticsearch",
+    "handler",
+    "database"
+  ],
+  "author": "Raul Geana",
+  "contributors": [
+    {
+      "name": "Gabriel Poama-Neagra",
+      "email": ""
+    },
+    {
+      "name": "Andrei Traianovschi",
+      "email": ""
+    },
+    {
+      "name": "Marius Chirita",
+      "email": ""
+    }],
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "chai-as-promised": "^5.1.0",
+    "chai-things": "^0.2.0",
+    "sinon": "^1.15.4",
+    "xo-logger": "^0.4.2",
+    "xo-rabbit": "*"
+  },
+  "dependencies": {
+    "bluebird": "^2.9.34",
+    "boom": "^2.8.0",
+    "elasticsearch": "^8.1.0",
+    "hoek": "^2.16.3",
+    "joi": "^6.6.1",
+    "lodash": "^3.10.1",
+    "nc-singleton": "^1.0.1",
+    "pg": "^4.4.1",
+    "squel": "^4.2.0",
+    "uuid": "^2.0.1"
+  }
+}

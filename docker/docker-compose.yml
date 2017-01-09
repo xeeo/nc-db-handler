@@ -1,0 +1,20 @@
+pluginDev:
+  image: nc-db-handler
+  command: -t
+  volumes:
+    - ../src:/opt/app/current/src
+    - ../test:/opt/app/current/test
+  links:
+    - pgbox
+    - esbox
+pgbox:
+  image: postgres:9.4
+  environment:
+    - LANG=en_US.UTF-8
+    - POSTGRES_PASSWORD=password
+  ports:
+    - "5432:5432"
+esbox:
+  image: elasticsearch:2
+  ports:
+    - "9200:9200"
