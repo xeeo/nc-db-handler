@@ -16,7 +16,6 @@ module.exports = function(options, action) {
 
     var schema = {
         dataSource: Joi.string().required(),
-        event     : Joi.string().optional(),
         logQuery  : Joi.boolean().optional().default(false),
         refresh   : Joi.boolean().optional().default(false)
     };

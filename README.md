@@ -55,7 +55,6 @@ This methods hits PG
 ```javascript
 ncDbHandler.create({
     dataSource: 'reviews.reviews', /* {String} | required | format: "database.table" */
-    event: 'review-added', /* {String} | optional */
     logQuery: true, /* {Boolean} | optional | default: false */
     mapping: require('adding-review-mapping'), /* {Function} | optional */
     payload: { /* {Object} | required */
@@ -166,7 +165,6 @@ This methods hits PG
 ```javascript
 ncDbHandler.remove({
     dataSource: 'reviews.reviews', /* {String} | required | format: "database.table" */
-    event: 'some-event' /* {String} | optional */
     logQuery: true, /* {Boolean} | optional | default: false */
     native: 'WHERE data->>\'id\' IN (\'1\', \'2\', \'3\')', /* {String} | optional */
     query: [ /* {Array|Object} | optional */
@@ -195,7 +193,6 @@ This methods hits PG
 ```javascript
 ncDbHandler.softRemove({
     dataSource: 'reviews.reviews', /* {String} | required | format: "database.table" */
-    event: 'some-event' /* {String} | optional */
     logQuery: true, /* {Boolean} | optional | default: false */
     native: 'WHERE data->>\'id\' = \'UUID\'' /* {String} | optional */
     query: { /* {Array|Object} | optional */
@@ -222,7 +219,6 @@ This methods hits PG
 ```javascript
 ncDbHandler.update({
     dataSource: 'reviews.reviews', /* {String} | required | format: "database.table" */
-    event: 'review-updated', /* {String} | optional */
     logQuery: true, /* {Boolean} | optional | default: false */
     native: 'WHERE data->>\'id\' = \'UUID\'' /* {String} | optional */
     query: { /* {Array|Object} | optional */

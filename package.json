@@ -41,9 +41,7 @@
     "chai": "^3.2.0",
     "chai-as-promised": "^5.1.0",
     "chai-things": "^0.2.0",
-    "sinon": "^1.15.4",
-    "xo-logger": "^0.4.2",
-    "xo-rabbit": "*"
+    "sinon": "^1.15.4"
   },
   "dependencies": {
     "bluebird": "^2.9.34",
