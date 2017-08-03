@@ -24,7 +24,9 @@ var checkKeys = function(object) {
         'not',
         'like',
         'nlike',
-        'regexp'
+        'regexp',
+        'jc',
+        'jic'
     ];
 
     for (var key in object) {
